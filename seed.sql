@@ -12,5 +12,5 @@ img_url VARCHAR NOT NULL
 
 CREATE TABLE genres(
  id INT REFERENCES movies(genre_id),
-
+name VARCHAR NOT NULL
 );

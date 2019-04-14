@@ -31,3 +31,6 @@ CommentService.update = (id, text, movie_id) => {
     UPDATE
     comments
     SET
+    text = $[text],
+    movie_id = $[movie_id]
+    WHERE

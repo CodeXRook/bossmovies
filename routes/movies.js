@@ -44,3 +44,4 @@ movieRouter.get('/:id', (req, res, next) =>{
 //UPDATE MOVIE
 movieRouter.put('/:id', (req, res, next) =>{
     const { id } = req.params;
+    const { title, genre_id, img_url} = req.body;

@@ -26,3 +26,8 @@ genreRouter.post('/', (req, res, next) => {
     })
     .catch(err =>{
         next(err);
+    });
+});
+
+//UPDATE GENRE
+genreRouter.put('/:id', (req, res, next) => {

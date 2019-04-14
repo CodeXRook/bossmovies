@@ -35,3 +35,7 @@ movieRouter.get('/:id', (req, res, next) =>{
     MovieService.read(id)
     .then(data => {
         res.json(data);
+    })
+    .catch(err => {
+        next(err);
+      });

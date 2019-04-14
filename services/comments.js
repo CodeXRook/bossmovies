@@ -25,3 +25,5 @@ CommentService.create = (text, movie_id) => {
     return db.one(sql, { text, movie_id});
 };
 
+//UPDATE
+CommentService.update = (id, text, movie_id) =>

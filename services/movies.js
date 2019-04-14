@@ -32,5 +32,8 @@ MovieService.update = (id, title, genre_id, img_url) => {
     UPDATE 
     movies
     SET
+    title = $[title],
+      genre_id = $[genre_id],
+      img_url = $[img_url] 
 
 }

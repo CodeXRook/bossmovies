@@ -44,3 +44,6 @@ CommentService.delete = (id) =>  {
     const sql = `
     DELETE FROM
     comments
+    WHERE
+    id = $[id]
+    `;

@@ -4,5 +4,6 @@ const CommentService = {};
 
 //READ
 CommentService.read = (id) => {
-    
+    const sql = `
+    SELECT *
 }

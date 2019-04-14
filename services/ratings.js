@@ -42,3 +42,7 @@ RatingService.update = ( id, stars, movie_id) => {
 RatingService.delete = (id) => {
     const sql = `
     DELETE FROM
+    ratings
+    WHERE
+    id = $[id]
+    `;

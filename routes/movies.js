@@ -10,4 +10,7 @@ movieRouter.post('/', (req, res, next) => {
     .then(data => {
         res.json(`Success: New movie created with ID: ${data.id}`);
     })
-}
+    .catch(err => {
+        next(err);
+      });
+});

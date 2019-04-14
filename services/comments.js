@@ -10,4 +10,5 @@ CommentService.read = (id) => {
     WHERE
     comments.id = $[id]
     `;
-}
+    return db.one(sql, { id });
+};

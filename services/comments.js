@@ -26,4 +26,5 @@ CommentService.create = (text, movie_id) => {
 };
 
 //UPDATE
-CommentService.update = (id, text, movie_id) =>
+CommentService.update = (id, text, movie_id) => {
+    const sql =`

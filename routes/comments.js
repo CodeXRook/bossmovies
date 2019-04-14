@@ -13,4 +13,8 @@ commentRouter.get('/:id', (req, res, next)=> {
     .catch(err => {
         next(err);
     });
-}
+});
+
+//CREATE COMMENT
+commentRouter.post('/', (req, res, next)=>{
+    const {text, movie_id} = req.body;

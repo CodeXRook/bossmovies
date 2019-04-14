@@ -19,5 +19,7 @@ CommentService.create = (text, movie_id) => {
     INSERT INTO
     comments (text, movie_id)
     VALUES
+    ($[text] $[movie_id])
+    RETURNING id
 
 }

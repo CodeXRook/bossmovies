@@ -18,3 +18,7 @@ genreRouter.get('/', (req, res, next) => {
 //CREATE GENRE
 genreRouter.post('/', (req, res, next) => {
     const { name } =res.body;
+
+    GenreService.create(name)
+    .then(data =>{
+        res.json(`Success: Product created with id: ${data.id}`); 

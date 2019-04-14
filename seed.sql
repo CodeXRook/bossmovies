@@ -15,8 +15,8 @@ CREATE DATABASE bossmovie_app;
   name VARCHAR NOT NULL
 );
 
-CREATE TABLE ratings(
-
+ CREATE TABLE ratings(
+  id SERIAL PRIMARY KEY NOT NULL,
 );
 
 

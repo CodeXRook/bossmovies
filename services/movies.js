@@ -48,3 +48,5 @@ MovieService.delete = (id) => {
       movies
       WHERE
       id = $[id]
+      `;
+      return db.none(sql, { id });

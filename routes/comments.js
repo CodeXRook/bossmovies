@@ -32,4 +32,7 @@ commentRouter.post('/', (req, res, next)=>{
 commentRouter.put('/:id', (req, res, next)=> {
     const { id } =req.params;
     const { text, movie_id} = req.body;
+
+    CommentService.update(id, text, movie_id)
+    .then(()=>{
 }

@@ -5,4 +5,5 @@ CREATE DATABASE bossmovie_app;
 
  CREATE TABLE movies (
 id SERIAL PRIMARY KEY NOT NULL,
+title VARCHAR NOT NULL,
  );

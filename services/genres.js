@@ -7,3 +7,5 @@ GenreService.read = (id) => {
     SELECT *
     FROM genres
     Where
+    genre.id $[id]
+    `;

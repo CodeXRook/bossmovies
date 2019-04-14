@@ -12,3 +12,6 @@ CommentService.read = (id) => {
     `;
     return db.one(sql, { id });
 };
+
+//CREATE
+CommentService.create = (text, movie_id) =>

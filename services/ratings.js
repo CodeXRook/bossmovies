@@ -18,3 +18,5 @@ RatingService.create = ( stars, movie_id) => {
     INSERT INTO
     ratings ( stars, movie_id)
     VALUES
+    ($[stars], $[movie_id]);
+    RETURNING id

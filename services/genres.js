@@ -34,4 +34,6 @@ GenreService.update = (id, name) => {
       WHERE
       genres.id = $[id]
     `;
+    return db.none(sql, {id, name});
+};
 

@@ -1,2 +1,4 @@
-DROP DATABASE IF EXISTS movie_app;
-CREATE DATABASE movie_app;
+DROP DATABASE IF EXISTS bossmovie_app;
+CREATE DATABASE bossmovie_app;
+
+\c bossmovie_app;

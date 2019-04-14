@@ -24,5 +24,6 @@ CREATE DATABASE bossmovie_app;
   CREATE TABLE comments (
  id SERIAL PRIMARY KEY NOT NULL,
  text VARCHAR NOT NULL,
+  movie_id INT REFERENCES movies(id)
   );
 

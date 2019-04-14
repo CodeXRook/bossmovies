@@ -14,5 +14,6 @@ GenreService.read = (id) => {
 
 //CREATE
 GenreService.create = (name) => {
-
+    const sql = `
+    INSERT INTO 
 };

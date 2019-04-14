@@ -37,3 +37,7 @@ CommentService.update = (id, text, movie_id) => {
     comments.id = $[id]
     `;
     return db.none(sql, {id, text, movie_id});
+};
+
+//DELETE
+CommentService.delete = (id) =>

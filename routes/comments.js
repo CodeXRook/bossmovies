@@ -29,4 +29,7 @@ commentRouter.post('/', (req, res, next)=>{
 });
 
 // Update Comment
-commentRouter.put('/:id', (req, res, next)=>
+commentRouter.put('/:id', (req, res, next)=> {
+    const { id } =req.params;
+    const { text, movie_id} = req.body;
+}

@@ -17,5 +17,7 @@ CommentService.read = (id) => {
 CommentService.create = (text, movie_id) => {
     const sql = `
     INSERT INTO
+    comments (text, movie_id)
+    VALUES
 
 }

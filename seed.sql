@@ -38,3 +38,4 @@ INSERT INTO ratings(id, stars, movie_id) VALUES
 ( 2, 5, 34);
 
 INSERT INTO comments(id, text, movie_id) VALUES
+( 5,'BEST MOVIE EVER', 34);

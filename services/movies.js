@@ -22,3 +22,5 @@ MovieService.read = (id) => {
     movies
     WHERE
     movies.id = $[id]
+    `;
+    return db.one(sql, { id });

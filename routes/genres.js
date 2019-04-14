@@ -33,3 +33,7 @@ genreRouter.post('/', (req, res, next) => {
 genreRouter.put('/:id', (req, res, next) => {
     const { id } = req.params;
     const { name } = req.body;
+
+    GenreService.update(id, name)
+    .then(()=>{
+        res.json("Success: Genre updated");

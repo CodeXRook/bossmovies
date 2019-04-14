@@ -27,4 +27,7 @@ GenreService.create = (name) => {
 //UPDATE
 GenreService.update = (id, name) => {
     const sql =`
+    UPDATE
+    generes
+    SET
 

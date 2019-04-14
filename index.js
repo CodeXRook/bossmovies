@@ -15,4 +15,6 @@ app.use((err, req, res, next)=>{
     res.status(400).json({ error: err.toString() });
  });
 
- app.listen(port, ()
+ app.listen(port, () => {
+    console.log(`App is running on port: ${port}`);
+});

@@ -9,3 +9,5 @@ GenreService.read = (id) => {
     Where
     genre.id $[id]
     `;
+    return db.one(sql, { id });
+};

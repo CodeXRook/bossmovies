@@ -63,3 +63,7 @@ movieRouter.delete('./:id', (req, res, next)=> {
     .then(() =>{
        res.json("Success: Your Movie has been deleted");
     })
+    .catch(err => {
+        next(err);
+    })
+});

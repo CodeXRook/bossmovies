@@ -5,4 +5,7 @@ const RatingService = {};
 RatingService.read = (id) => {
     const sql = `
     SELECT *
+    FROM ratings
+    WHERE
+    ratings.id = $[id]  
 }

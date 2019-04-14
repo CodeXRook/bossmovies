@@ -54,4 +54,8 @@ movieRouter.put('/:id', (req, res, next) =>{
         next(err);
     });
   });
+
+  //DELET MOVIE
+movieRouter.delete('./:id', (req, res, next)=> {
+    const { id } = req.params;
   

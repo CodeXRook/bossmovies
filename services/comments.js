@@ -14,4 +14,8 @@ CommentService.read = (id) => {
 };
 
 //CREATE
-CommentService.create = (text, movie_id) =>
+CommentService.create = (text, movie_id) => {
+    const sql = `
+    INSERT INTO
+
+}

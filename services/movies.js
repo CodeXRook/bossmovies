@@ -50,3 +50,6 @@ MovieService.delete = (id) => {
       id = $[id]
       `;
       return db.none(sql, { id });
+};
+
+module.exports = MovieService;

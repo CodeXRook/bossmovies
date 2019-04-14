@@ -23,3 +23,8 @@ GenreService.create = (name) => {
     `;
     return db.one(sql, { name });
 };
+
+//UPDATE
+GenreService.update = (id, name) => {
+    const sql =`
+

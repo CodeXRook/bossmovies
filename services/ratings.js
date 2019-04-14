@@ -16,3 +16,5 @@ RatingService.read = (id) => {
 RatingService.create = ( stars, movie_id) => {
     const sql = `
     INSERT INTO
+    ratings ( stars, movie_id)
+    VALUES

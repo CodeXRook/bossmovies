@@ -35,5 +35,9 @@ MovieService.update = (id, title, genre_id, img_url) => {
     title = $[title],
       genre_id = $[genre_id],
       img_url = $[img_url] 
+      WHERE
+      movies.id = $[id]
+    `;
+    return db.none(sql, {id, title, genre_id, img_url });
 
 }

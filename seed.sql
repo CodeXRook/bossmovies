@@ -18,6 +18,7 @@ CREATE DATABASE bossmovie_app;
  CREATE TABLE ratings(
   id SERIAL PRIMARY KEY NOT NULL,
   stars INT NULL,
+   movie_id INT REFERENCES movies(id)
 );
 
 

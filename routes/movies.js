@@ -39,3 +39,7 @@ movieRouter.get('/:id', (req, res, next) =>{
     .catch(err => {
         next(err);
       });
+});
+
+//UPDATE MOVIE
+movieRouter.put('/:id', (req, res, next) =>{

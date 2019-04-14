@@ -15,3 +15,8 @@ ratingRouter.get('/:id', (req, res, next)=>{
         next(err);
     });
 });
+
+//CREATE RATING
+ratingRouter.post('/', (req, res, next) => {
+    const {stars, movie_id} =res.body;
+

@@ -3,5 +3,6 @@ const RatingService = {};
 
 //READ
 RatingService.read = (id) => {
-    
+    const sql = `
+    SELECT *
 }

@@ -35,4 +35,6 @@ commentRouter.put('/:id', (req, res, next)=> {
 
     CommentService.update(id, text, movie_id)
     .then(()=>{
+        res.json("Success: Comment updated");
+    })
 }

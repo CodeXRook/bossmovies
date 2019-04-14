@@ -33,3 +33,6 @@ ratingRouter.post('/', (req, res, next) => {
 ratingRouter.put('/:id', (req, res, next)=> {
     const { id } = req.params;
     const { stars, movie_id} =res.body;
+
+    RatingService.update(id, stars, movie_id)
+    .then(()=>{

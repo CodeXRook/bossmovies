@@ -40,5 +40,9 @@ GenreService.update = (id, name) => {
 GenreService.delete = (id) => {
     const sql = `
     DELETE FROM
+    genres
+    WHERE
+    id = $[id]
+    `;
 }
 

@@ -14,3 +14,7 @@ genreRouter.get('/', (req, res, next) => {
         next(err);
     });
 });
+
+//CREATE GENRE
+genreRouter.post('/', (req, res, next) => {
+    const { name } =res.body;

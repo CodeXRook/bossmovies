@@ -29,3 +29,7 @@ RatingService.update = ( id, stars, movie_id) => {
     const sql = `
     UPDATE
     ratings
+    SET
+    stars = $[stars],
+    movie_id = $[movie_id]
+    WHERE

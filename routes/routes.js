@@ -46,3 +46,6 @@ ratingRouter.put('/:id', (req, res, next)=> {
 // Delete ratings
 ratingRouter.delete('/:id', (req, res, next) =>{
     const { id } = req.params;
+
+    RatingService.delete(id)
+    .then(() => {

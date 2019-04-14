@@ -47,3 +47,5 @@ GenreService.delete = (id) => {
     return db.none(sql, { id });
 };
 
+module.exports = GenreService;
+

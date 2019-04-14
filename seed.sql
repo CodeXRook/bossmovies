@@ -8,4 +8,9 @@ id SERIAL PRIMARY KEY NOT NULL,
 title VARCHAR NOT NULL,
 genre_id INT UNIQUE NOT NULL,
 img_url VARCHAR NOT NULL
- );
+);
+
+CREATE TABLE genres(
+ id INT REFERENCES movies(genre_id),
+
+);

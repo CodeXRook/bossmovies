@@ -21,4 +21,5 @@ GenreService.create = (name) => {
     ($[name])
     RETURNING id
     `;
+    return db.one(sql, { name });
 };

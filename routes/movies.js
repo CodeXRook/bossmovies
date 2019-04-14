@@ -48,3 +48,5 @@ movieRouter.put('/:id', (req, res, next) =>{
 
     MovieService.update(id, title, genre_id, img_url)
     .then(() =>{
+        res.json('Success: Movie has been updated');
+    })

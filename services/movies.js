@@ -42,4 +42,6 @@ MovieService.update = (id, title, genre_id, img_url) => {
 };
 
 //DELETE
-MovieService.delete = (id) =>
+MovieService.delete = (id) => {
+    const sql = `
+      DELETE FROM

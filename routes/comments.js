@@ -37,4 +37,7 @@ commentRouter.put('/:id', (req, res, next)=> {
     .then(()=>{
         res.json("Success: Comment updated");
     })
-}
+    .catch(err => {
+        next(err);
+    });
+ });

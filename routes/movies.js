@@ -28,3 +28,6 @@ movieRouter.get('./:id', (req, res, next) =>{
         next(err);
     });
 });
+
+movieRouter.get('/:id', (req, res, next) =>{
+    const { id } =req.params;

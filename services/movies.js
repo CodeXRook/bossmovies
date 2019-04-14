@@ -28,6 +28,9 @@ MovieService.read = (id) => {
 
 //UPDATE
 MovieService.update = (id, title, genre_id, img_url) => {
+    const sql = `
+    UPDATE 
+    movies
+    SET
 
-    
 }

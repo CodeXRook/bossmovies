@@ -20,3 +20,8 @@ ratingRouter.get('/:id', (req, res, next)=>{
 ratingRouter.post('/', (req, res, next) => {
     const {stars, movie_id} =res.body;
 
+    RatingService.create(stars, movie_id)
+    .then(data => {
+        res.json(`Success: Rating created with id: ${data.id}`);
+    })
+

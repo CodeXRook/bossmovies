@@ -36,4 +36,8 @@ GenreService.update = (id, name) => {
     `;
     return db.none(sql, {id, name});
 };
+//DELETE
+GenreService.delete = (id) => {
+    
+}
 

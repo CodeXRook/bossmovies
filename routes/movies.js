@@ -8,4 +8,6 @@ movieRouter.post('/', (req, res, next) => {
 
     MovieService.create(title, genre_id, img_url)
     .then(data => {
+        res.json(`Success: New movie created with ID: ${data.id}`);
+    })
 }

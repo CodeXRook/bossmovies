@@ -8,4 +8,6 @@ CommentService.read = (id) => {
     SELECT *
     FROM comments
     WHERE
+    comments.id = $[id]
+    `;
 }

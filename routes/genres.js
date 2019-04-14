@@ -9,3 +9,6 @@ genreRouter.get('/', (req, res, next) => {
     GenreService.read(id)
     .then(data => {
         res.json(data);
+    })
+    .catch(err => {
+        next(err);

@@ -24,3 +24,10 @@ MovieService.read = (id) => {
     movies.id = $[id]
     `;
     return db.one(sql, { id });
+};
+
+//UPDATE
+MovieService.update = (id, title, genre_id, img_url) => {
+
+    
+}

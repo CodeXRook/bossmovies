@@ -18,3 +18,6 @@ commentRouter.get('/:id', (req, res, next)=> {
 //CREATE COMMENT
 commentRouter.post('/', (req, res, next)=>{
     const {text, movie_id} = req.body;
+
+    CommentService.create(text)
+    .then(data => {

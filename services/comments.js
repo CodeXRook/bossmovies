@@ -34,3 +34,6 @@ CommentService.update = (id, text, movie_id) => {
     text = $[text],
     movie_id = $[movie_id]
     WHERE
+    comments.id = $[id]
+    `;
+    return db.none(sql, {id, text, movie_id});

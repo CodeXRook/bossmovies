@@ -11,3 +11,8 @@ GenreService.read = (id) => {
     `;
     return db.one(sql, { id });
 };
+
+//CREATE
+GenreService.create = (name) => {
+
+};

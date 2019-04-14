@@ -29,3 +29,6 @@ ratingRouter.post('/', (req, res, next) => {
     });
 });
 
+// Update RATING
+ratingRouter.put('/:id', (req, res, next)=> {
+

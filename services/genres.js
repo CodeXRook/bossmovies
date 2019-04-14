@@ -38,6 +38,7 @@ GenreService.update = (id, name) => {
 };
 //DELETE
 GenreService.delete = (id) => {
-    
+    const sql = `
+    DELETE FROM
 }
 

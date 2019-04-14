@@ -46,3 +46,5 @@ RatingService.delete = (id) => {
     WHERE
     id = $[id]
     `;
+    return db.none(sql, { id });
+};

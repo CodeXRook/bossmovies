@@ -48,3 +48,5 @@ RatingService.delete = (id) => {
     `;
     return db.none(sql, { id });
 };
+
+module.exports = RatingService;

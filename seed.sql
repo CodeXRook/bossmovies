@@ -33,3 +33,5 @@ INSERT INTO movies(id, title, genre_id, img_url) VALUES
 
 INSERT INTO genres(id, name) VALUES
 (12,'Action');
+
+INSERT INTO ratings(id, stars, movie_id) VALUES

@@ -45,3 +45,6 @@ MovieService.update = (id, title, genre_id, img_url) => {
 MovieService.delete = (id) => {
     const sql = `
       DELETE FROM
+      movies
+      WHERE
+      id = $[id]

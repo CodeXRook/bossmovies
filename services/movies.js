@@ -39,5 +39,7 @@ MovieService.update = (id, title, genre_id, img_url) => {
       movies.id = $[id]
     `;
     return db.none(sql, {id, title, genre_id, img_url });
+};
 
-}
+//DELETE
+MovieService.delete = (id) =>

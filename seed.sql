@@ -25,5 +25,7 @@ CREATE DATABASE bossmovie_app;
  id SERIAL PRIMARY KEY NOT NULL,
  text VARCHAR NOT NULL,
   movie_id INT REFERENCES movies(id)
-  );
+);
+
+INSERT INTO movies(id, title, genre_id, img_url) VALUES
 

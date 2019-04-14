@@ -30,4 +30,8 @@ GenreService.update = (id, name) => {
     UPDATE
     generes
     SET
+    name = $[name]
+      WHERE
+      genres.id = $[id]
+    `;
 

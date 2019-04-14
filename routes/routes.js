@@ -36,3 +36,5 @@ ratingRouter.put('/:id', (req, res, next)=> {
 
     RatingService.update(id, stars, movie_id)
     .then(()=>{
+        res.json("Success: Rating updated");
+    })

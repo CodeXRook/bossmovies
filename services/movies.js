@@ -16,3 +16,6 @@ return db.one(sql, { title, genre_id, img_url});
 
 //READ
 MovieService.read = (id) => {
+    const sql = `
+    SELECT *
+    FROM 

@@ -19,3 +19,6 @@ MovieService.read = (id) => {
     const sql = `
     SELECT *
     FROM 
+    movies
+    WHERE
+    movies.id = $[id]

@@ -6,3 +6,4 @@ router.get('/', (req, res, next) => {
 });
 
 router.use('/movies', require('./movies'));
+router.use('/ratings', require('./ratings'));

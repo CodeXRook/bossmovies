@@ -3,4 +3,6 @@ const CommentService = {};
 
 
 //READ
-CommentService.read = (id)
+CommentService.read = (id) => {
+    
+}

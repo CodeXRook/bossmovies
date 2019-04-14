@@ -6,4 +6,6 @@ const MovieService = require('../services/movies');
 movieRouter.post('/', (req, res, next) => {
     const { title, genre_id, img_url} = req.body;
 
+    MovieService.create(title, genre_id, img_url)
+    .then(data => {
 }

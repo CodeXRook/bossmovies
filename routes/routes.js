@@ -38,3 +38,8 @@ ratingRouter.put('/:id', (req, res, next)=> {
     .then(()=>{
         res.json("Success: Rating updated");
     })
+    .catch(err => {
+        next(err);
+   });
+});
+

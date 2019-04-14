@@ -18,4 +18,7 @@ GenreService.create = (name) => {
     INSERT INTO 
     genres (name)
     VALUE
+    ($[name])
+    RETURNING id
+    `;
 };

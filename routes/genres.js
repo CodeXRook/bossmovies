@@ -31,3 +31,5 @@ genreRouter.post('/', (req, res, next) => {
 
 //UPDATE GENRE
 genreRouter.put('/:id', (req, res, next) => {
+    const { id } = req.params;
+    const { name } = req.body;

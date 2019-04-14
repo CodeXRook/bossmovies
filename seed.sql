@@ -29,3 +29,6 @@ CREATE DATABASE bossmovie_app;
 
 INSERT INTO movies(id, title, genre_id, img_url) VALUES
 (34, 'The Matrix', '12','https://www.youtube.com/watch?v=vKQi3bBA1y8');
+
+
+INSERT INTO genres(id, name) VALUES

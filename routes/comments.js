@@ -54,3 +54,5 @@ commentRouter.delete('/:id', (req, res, next) => {
         next(err);
     });
 });
+
+module.exports = commentRouter;
